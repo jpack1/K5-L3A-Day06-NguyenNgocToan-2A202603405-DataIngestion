@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size per page (chars),500,50,"document_id, source, page, printed_page, chapter, chapter_title, sections",none,OpenAI text-embedding-3-small (1536d),"Baseline: fixed windows cut definitions mid-sentence, so evidence is often split across chunks",5/18,11/18,3/6,4/6,171 chunks; 3 dev questions had gold page in top-3 but evidence split across chunks
+B,by_paragraph (heading-aware packing),500,0,same as A,none,OpenAI text-embedding-3-small (1536d),Keeping whole paragraphs and starting chunks at section headings improves coherence and Hit@1 vs A,6/18,10/18,3/6,4/6,203 chunks (min 6 chars: short fragments like 'TRY IT'); unnumbered sub-headings stay attached to previous chunk
+C,same as B,500,0,same as A,"chapter = question filter (only for the 7 filter questions, assumed user context)",OpenAI text-embedding-3-small (1536d),Filtering by chapter removes cross-chapter distractors (list vs dict pop/copy/nested) without hurting unfiltered questions,6/18,12/18,3/6,5/6,Same chunks/vectors as B; dev filter questions Hit@3 5/5 vs 3/5 in B; chosen on dev by the pre-declared rule (highest dev Hit@3)

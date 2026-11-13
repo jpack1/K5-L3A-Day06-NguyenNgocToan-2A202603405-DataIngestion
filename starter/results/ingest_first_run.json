@@ -1,0 +1,6 @@
+{
+  "note": "Chép nguyên văn từ log console của lần chạy đầu `python -m src.run --split dev` (2026-11-13, bảng chunks còn trống). Các summary.json sau đó ghi embedded_now=0 vì vector được tái sử dụng.",
+  "A": {"chunks": 171, "stored_rows": 171, "embedded_now": 171, "reused_unchanged": 0, "deleted_obsolete": 0, "chars_total": 72866, "len_min": 61, "len_median": 500, "len_mean": 426.1, "len_max": 500, "len_p10_p90": [174.0, 500.0], "embedding_tokens_now": 20362, "cost_usd_now": 0.000407, "ingest_seconds": 2.16},
+  "B": {"chunks": 203, "stored_rows": 203, "embedded_now": 203, "reused_unchanged": 0, "deleted_obsolete": 0, "chars_total": 67126, "len_min": 6, "len_median": 386, "len_mean": 330.7, "len_max": 500, "len_p10_p90": [67.0, 493.0], "embedding_tokens_now": 18652, "cost_usd_now": 0.000373, "ingest_seconds": 2.43},
+  "rerun_check": "Lần chạy dev thứ 2: A 171/171 và B 203/203 chunk được tái sử dụng, 0 embed lại, 0 xóa, số dòng giữ nguyên (results/dev/summary.json)."
+}

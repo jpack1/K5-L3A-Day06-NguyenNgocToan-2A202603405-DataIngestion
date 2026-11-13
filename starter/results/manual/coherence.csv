@@ -1,0 +1,178 @@
+﻿position,page,char_offset,text_at_position,strategy,chunk_id,chunk_chars,chunk_text,score_0_2,reason,grader
+pos01,125,598,"dent names in a roster, and printing the names one at a time. In this chapter, t",A,openstax-intro-python:p125:f1,500,"time set by a user is reached, the phone is locked. Loops can also be used for iterating over lists like
+student names in a roster, and printing the names one at a time.
+In this chapter, two types of loops, for loop and while loop, are introduced. This chapter also introduces
+break and continue statements for controlling a loop's execution.
+5.1 While loop
+Learning objectives
+By the end of this section you should be able to
+• Explain the loop construct in Python.
+• Use a while loop to implement r",1,"Mở đầu giữa câu ('time set by a user...'), cuối bị cắt giữa từ ('implement r'); đoạn tại vị trí vẫn đọc được.",Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos01,125,598,"dent names in a roster, and printing the names one at a time. In this chapter, t",B,openstax-intro-python:p125:p6,426,"5.6 Chapter summary
+Introduction
+A loop is a code block that runs a set of statements while a given condition is true. A loop is often used for
+performing a repeating task. Ex: The software on a phone repeatedly checks to see if the phone is idle. Once
+the time set by a user is reached, the phone is locked. Loops can also be used for iterating over lists like
+student names in a roster, and printing the names one at a time.",2,Trọn đoạn Introduction; chỉ dính thêm 2 dòng mục lục chương ở đầu.,Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos02,131,557, the arguments to the range() function for the increasing sequence of every 3rd ,A,openstax-intro-python:p131:f1,500,"CONCEPTS IN PRACTICE
+For loop using a range() function
+4 . What are the arguments to the range() function for the increasing sequence of every 3rd integer from
+10 to 22 (inclusive of both ends)?
+a. range(10, 23, 3)
+b. range(10, 22, 3)
+c. range(22, 10, -3)
+5 . What are the arguments to the range() function for the decreasing sequence of every integer from 5
+to 1 (inclusive of both ends)?
+a. range(5, 1, 1)
+b. range(5, 1, -1)
+c. range(5, 0, -1)
+6 . What is the sequence generated from range(-1, -2, ",1,"Câu hỏi 4-5 trọn vẹn nhưng câu 6 bị cắt giữa ('range(-1, -2, ').",Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos02,131,557, the arguments to the range() function for the increasing sequence of every 3rd ,B,openstax-intro-python:p131:p1,498,"For loop using a range() function
+4 . What are the arguments to the range() function for the increasing sequence of every 3rd integer from
+10 to 22 (inclusive of both ends)?
+a. range(10, 23, 3)
+b. range(10, 22, 3)
+c. range(22, 10, -3)
+5 . What are the arguments to the range() function for the decreasing sequence of every integer from 5
+to 1 (inclusive of both ends)?
+a. range(5, 1, 1)
+b. range(5, 1, -1)
+c. range(5, 0, -1)
+6 . What is the sequence generated from range(-1, -2, -1)?
+a. 1
+b. -1, -2",1,Câu hỏi 4-5 trọn vẹn nhưng câu 6 mất đáp án c (bị cắt theo giới hạn 500).,Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos03,137,668,ment can be used to improve runtime efficiency when further loop execution is no,A,openstax-intro-python:p137:f1,500,"ile and for loops.
+Break
+A break statement is used within a for or a while loop to allow the program execution to exit the loop once a
+given condition is triggered. A break statement can be used to improve runtime efficiency when further loop
+execution is not required.
+Ex: A loop that looks for the character ""a"" in a given string called user_string. The loop below is a regular
+for loop for going through all the characters of user_string. If the character is found, the break statement
+takes execu",1,"Đầu là mảnh 'ile and for loops.', cuối cắt giữa từ 'execu'; định nghĩa break vẫn trọn.",Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos03,137,668,ment can be used to improve runtime efficiency when further loop execution is no,B,openstax-intro-python:p137:p1,475,"5.4 Break and continue
+Learning objectives
+By the end of this section you should be able to
+• Analyze a loop's execution with break and continue statements.
+• Use break and continue control statements in while and for loops.
+Break
+A break statement is used within a for or a while loop to allow the program execution to exit the loop once a
+given condition is triggered. A break statement can be used to improve runtime efficiency when further loop
+execution is not required.",2,"Bắt đầu từ heading 5.4, có objectives và trọn định nghĩa break.",Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos04,143,859,e loops within the body of another loop. • A break statement is used within a fo,A,openstax-intro-python:p143:f1,500,"y
+Highlights from this chapter include:
+• A while loop runs a set of statements, known as the loop body, while a given condition, known as the
+loop expression, is true.
+• A for loop can be used to iterate over elements of a container object.
+• A range() function generates a sequence of integers between the two numbers given a step size.
+• A nested loop has one or more loops within the body of another loop.
+• A break statement is used within a for or a while loop to allow the program execution to",1,"Đầu là ký tự 'y' lẻ, bullet break cuối bị cắt giữa câu.",Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos04,143,859,e loops within the body of another loop. • A break statement is used within a fo,B,openstax-intro-python:p143:p2,379,"• A break statement is used within a for or a while loop to allow the program execution to exit the loop
+once a given condition is triggered.
+• A continue statement allows for skipping the execution of the remainder of the loop without exiting the
+loop entirely.
+• A loop else statement runs after the loop's execution is completed without being interrupted by a break
+statement.",2,"Ba bullet tóm tắt trọn vẹn, tự hiểu được dù thiếu dòng 'Highlights'.",Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos05,224,609,duction-python-programming/pages/ 9-1-modifying-and-iterating-lists) 9.2 Sorting,A,openstax-intro-python:p224:f1,500,"that prints ""found!"" if ""soccer"" is found in the given list.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+9-1-modifying-and-iterating-lists)
+9.2 Sorting and reversing lists
+Learning objectives
+By the end of this section you should be able to
+• Understand the concept of sorting.
+• Use built-in sort() and reverse() methods.
+Sorting
+Ordering elements in a sequence is often useful. Sorting is the task of arranging elements in a sequence in
+ascending or ",1,"Mở đầu giữa câu bài tập, cuối cắt 'ascending or'; định nghĩa sorting bị cụt.",Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos05,224,609,duction-python-programming/pages/ 9-1-modifying-and-iterating-lists) 9.2 Sorting,B,openstax-intro-python:p224:p1,203,"Write a program that prints ""found!"" if ""soccer"" is found in the given list.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+9-1-modifying-and-iterating-lists)",1,"Chỉ có câu bài tập + link, tiêu đề 'Simple Searching' nằm ở chunk trước.",Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos06,230,550,"t(matA[0]) a. Error b. 7 c. [7, 4, 5] Using nested loops to iterate nested lists",A,openstax-intro-python:p230:f1,500,"]
+3 . What would be the result of the following code:
+  print(matA[0])
+a. Error
+b. 7
+c. [7, 4, 5]
+Using nested loops to iterate nested lists
+A nested loop structure can be used to iterate a list-of-lists. For a two-dimensional list-of-lists, an outer for
+loop can be used for rows, and an inner for loop can be used for columns.
+EXAMPLE 9.4
+Iterating a list-of-lists
+The code below demonstrates how to iterate a list-of-lists.
+The outer loop on line 9 goes element by element for the larger list. Eac",1,Đầu là ']' và câu hỏi thiếu ma trận; cuối cắt giữa từ 'Eac'.,Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos06,230,550,"t(matA[0]) a. Error b. 7 c. [7, 4, 5] Using nested loops to iterate nested lists",B,openstax-intro-python:p230:p1,424,"3 . What would be the result of the following code:
+  print(matA[0])
+a. Error
+b. 7
+c. [7, 4, 5]
+Using nested loops to iterate nested lists
+A nested loop structure can be used to iterate a list-of-lists. For a two-dimensional list-of-lists, an outer for
+loop can be used for rows, and an inner for loop can be used for columns.
+EXAMPLE 9.4
+Iterating a list-of-lists
+The code below demonstrates how to iterate a list-of-lists.",2,Trọn đoạn 'Using nested loops to iterate nested lists'; phần code ví dụ ở chunk sau.,Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos07,236,528,n append(element) Adds the specified element to the end of a list. remove(elemen,A,openstax-intro-python:p236:f1,500,"grams using lists.
+Function Description
+append(element) Adds the specified element to the end of a list.
+remove(element) Removes the specified element from the list if the element exists.
+pop() Removes the last element of a list.
+max(list) Returns the maximum element of the list specified.
+min(list) Returns the maximum element of the list specified.
+sum(list) Returns the summation of a list composed of numbers.
+sort() Sorts a list on which the method is called in ascending order.
+reverse() Rever",1,"Đầu là mảnh 'grams using lists.', dòng reverse() bị cắt 'Rever'.",Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos07,236,528,n append(element) Adds the specified element to the end of a list. remove(elemen,B,openstax-intro-python:p236:p1,496,"append(element) Adds the specified element to the end of a list.
+remove(element) Removes the specified element from the list if the element exists.
+pop() Removes the last element of a list.
+max(list) Returns the maximum element of the list specified.
+min(list) Returns the maximum element of the list specified.
+sum(list) Returns the summation of a list composed of numbers.
+sort() Sorts a list on which the method is called in ascending order.
+reverse() Reverses the order of elements in a list.",2,"Các dòng bảng tham chiếu trọn vẹn, tự hiểu được (thiếu header bảng).",Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos08,242,695,"eys and values can be obtained using keys(), values(), and items() function call",A,openstax-intro-python:p242:f1,500,"
+a. 0
+b. None
+c. ""Student""
+3 . What is the output of members.get(""jaya"", ""does not exist"")?
+a. ""Student""
+b. ""does not exist""
+c. None
+Obtaining dictionary keys and values
+Dictionary keys, values, and both keys and values can be obtained using keys(), values(), and items()
+function calls, respectively. The return type of keys(), values(), and items() are dict_keys,
+dict_values, and dict_items, which can be converted to a list object using the list constructor list().
+EXAMPLE 10.1
+String template f",1,Đầu là đáp án của câu hỏi không có đề; cuối cắt 'String template f'.,Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos08,242,695,"eys and values can be obtained using keys(), values(), and items() function call",B,openstax-intro-python:p242:p1,455,"3 . What is the output of members.get(""jaya"", ""does not exist"")?
+a. ""Student""
+b. ""does not exist""
+c. None
+Obtaining dictionary keys and values
+Dictionary keys, values, and both keys and values can be obtained using keys(), values(), and items()
+function calls, respectively. The return type of keys(), values(), and items() are dict_keys,
+dict_values, and dict_items, which can be converted to a list object using the list constructor list().
+EXAMPLE 10.1",2,Trọn đoạn định nghĩa keys()/values()/items(); chỉ treo 'EXAMPLE 10.1' cuối.,Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos09,248,489,"ing the items() function, both the key and value for each item are passed to the",A,openstax-intro-python:p248:f0,500,"than 0?
+a. fruit_count(""pomegranate"") > 0
+b. fruit_count[""pomegranate""] > 0
+c. fruit_count.get(""pomegranate"" > 0)
+Looping on a dictionary
+Looping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a
+dictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using the
+keys() function and are passed to the loop variable one at a time. When looping over items using the
+items() function, both the key and value fo",0,"Câu tại vị trí bị cắt giữa ('both the key and value fo'), mất ý chính.",Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos09,248,489,"ing the items() function, both the key and value for each item are passed to the",B,openstax-intro-python:p248:p1,472,"Looping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a
+dictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using the
+keys() function and are passed to the loop variable one at a time. When looping over items using the
+items() function, both the key and value for each item are passed to the loop variable.
+A FOR LOOP OVER A DICTIONARY RETRIEVES EACH KEY IN THE DICTIONARY",2,Trọn đoạn 'Looping on a dictionary'.,Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos10,254,916,aries-and-dictionary-comprehension) Restructuring the company data Suppose you h,A,openstax-intro-python:p254:f1,500," the keys are product names and the values are
+their respective prices in dollars. Write a Python program that uses dictionary comprehension to create a
+new dictionary that has the same keys as the original dictionary, but the values are the prices in euros.
+Assume that the exchange rate is 1 dollar = 0.85 euros.
+Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+10-5-nested-dictionaries-and-dictionary-comprehension)
+Restructuring the company data
+Suppose",0,Bài tập 'Restructuring the company data' bị cắt ngay sau 'Suppose'.,Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)
+pos10,254,916,aries-and-dictionary-comprehension) Restructuring the company data Suppose you h,B,openstax-intro-python:p254:p2,177,"Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/
+10-5-nested-dictionaries-and-dictionary-comprehension)
+Restructuring the company data",0,"Chunk chỉ có link + tiêu đề bài tập, không có nội dung.",Claude (draft + rà soát lần 2 đối chiếu dữ liệu; Nguyễn Ngọc Toàn)

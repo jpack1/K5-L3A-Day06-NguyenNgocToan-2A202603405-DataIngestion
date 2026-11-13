@@ -1,5 +1,14 @@
 # Day 06 · Data Ingestion Engineering
 
+> **Bài làm của Nguyễn Ngọc Toàn (2A202603405)** — toàn bộ code và dữ liệu nằm trong `starter/`:
+> setup và lệnh chạy: [starter/README.md](starter/README.md#cách-chạy-bài-làm-day-06) ·
+> manifest: [starter/data/manifest.json](starter/data/manifest.json) ·
+> benchmark: [starter/benchmark/](starter/benchmark/) ·
+> kết quả, trace, nhãn: [starter/results/](starter/results/) ·
+> experiment log: [artifacts/experiment_log.csv](artifacts/experiment_log.csv) ·
+> báo cáo: [report/individual/2A202603405_NguyenNgocToan.md](report/individual/2A202603405_NguyenNgocToan.md).
+> PDF gốc không được commit (`starter/data/raw/` bị ignore); `python scripts/prepare_data.py` tải lại và kiểm tra SHA-256.
+
 **Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**
 
 Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, rồi đo xem cách chuẩn bị dữ liệu nào hiệu quả nhất.

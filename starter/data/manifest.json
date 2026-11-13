@@ -1,0 +1,615 @@
+{
+  "corpus": "Introduction to Python Programming (OpenStax), chapters 5, 9, 10",
+  "counting_rule": "Count PDF physical pages of chapters 5, 9, 10 (ranges from the PDF outline) with >= 300 normalized characters; exclude stub pages. Cover, contents, preface, other chapters, answer key and index are not used.",
+  "sources": [
+    {
+      "source_id": "openstax-intro-python",
+      "title": "Introduction to Python Programming",
+      "publisher": "OpenStax, Rice University",
+      "source_path_or_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Introduction_to_Python_Programming-WEB.pdf",
+      "local_path": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+      "book_page": "https://openstax.org/details/books/introduction-python-programming",
+      "license_or_permission": "CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/); non-commercial educational use with attribution",
+      "accessed_at": "2026-11-13",
+      "snapshot": {
+        "sha256": "e1298e4fcfe541a8fc3bb786c5756d3d2be8e6ffc07997f1bc1e0ac270be383d",
+        "pdf_physical_pages": 397
+      },
+      "chapters_used": {
+        "5": {
+          "title": "Chapter 5 Loops",
+          "pdf_pages": [
+            125,
+            146
+          ]
+        },
+        "9": {
+          "title": "Chapter 9 Lists",
+          "pdf_pages": [
+            221,
+            236
+          ]
+        },
+        "10": {
+          "title": "Chapter 10 Dictionaries",
+          "pdf_pages": [
+            237,
+            258
+          ]
+        }
+      },
+      "physical_pages_in_ranges": 60,
+      "counted_pages": [
+        {
+          "page": 125,
+          "printed_page": null,
+          "chapter": 5,
+          "sections": [
+            "5.1 While loop"
+          ],
+          "chars": 1196
+        },
+        {
+          "page": 126,
+          "printed_page": 116,
+          "chapter": 5,
+          "sections": [
+            "5.1 While loop"
+          ],
+          "chars": 1345
+        },
+        {
+          "page": 127,
+          "printed_page": 117,
+          "chapter": 5,
+          "sections": [
+            "5.1 While loop"
+          ],
+          "chars": 1291
+        },
+        {
+          "page": 128,
+          "printed_page": 118,
+          "chapter": 5,
+          "sections": [
+            "5.1 While loop",
+            "5.2 For loop"
+          ],
+          "chars": 1368
+        },
+        {
+          "page": 129,
+          "printed_page": 119,
+          "chapter": 5,
+          "sections": [
+            "5.2 For loop"
+          ],
+          "chars": 1104
+        },
+        {
+          "page": 130,
+          "printed_page": 120,
+          "chapter": 5,
+          "sections": [
+            "5.2 For loop"
+          ],
+          "chars": 1036
+        },
+        {
+          "page": 131,
+          "printed_page": 121,
+          "chapter": 5,
+          "sections": [
+            "5.2 For loop"
+          ],
+          "chars": 1114
+        },
+        {
+          "page": 132,
+          "printed_page": 122,
+          "chapter": 5,
+          "sections": [
+            "5.2 For loop",
+            "5.3 Nested loops"
+          ],
+          "chars": 1353
+        },
+        {
+          "page": 133,
+          "printed_page": 123,
+          "chapter": 5,
+          "sections": [
+            "5.3 Nested loops"
+          ],
+          "chars": 1030
+        },
+        {
+          "page": 134,
+          "printed_page": 124,
+          "chapter": 5,
+          "sections": [
+            "5.3 Nested loops"
+          ],
+          "chars": 553
+        },
+        {
+          "page": 135,
+          "printed_page": 125,
+          "chapter": 5,
+          "sections": [
+            "5.3 Nested loops"
+          ],
+          "chars": 1064
+        },
+        {
+          "page": 136,
+          "printed_page": 126,
+          "chapter": 5,
+          "sections": [
+            "5.3 Nested loops"
+          ],
+          "chars": 908
+        },
+        {
+          "page": 137,
+          "printed_page": 127,
+          "chapter": 5,
+          "sections": [
+            "5.3 Nested loops",
+            "5.4 Break and continue"
+          ],
+          "chars": 1337
+        },
+        {
+          "page": 138,
+          "printed_page": 128,
+          "chapter": 5,
+          "sections": [
+            "5.4 Break and continue"
+          ],
+          "chars": 917
+        },
+        {
+          "page": 139,
+          "printed_page": 129,
+          "chapter": 5,
+          "sections": [
+            "5.4 Break and continue"
+          ],
+          "chars": 961
+        },
+        {
+          "page": 140,
+          "printed_page": 130,
+          "chapter": 5,
+          "sections": [
+            "5.4 Break and continue",
+            "5.5 Loop else"
+          ],
+          "chars": 1007
+        },
+        {
+          "page": 141,
+          "printed_page": 131,
+          "chapter": 5,
+          "sections": [
+            "5.5 Loop else"
+          ],
+          "chars": 1560
+        },
+        {
+          "page": 142,
+          "printed_page": 132,
+          "chapter": 5,
+          "sections": [
+            "5.5 Loop else"
+          ],
+          "chars": 612
+        },
+        {
+          "page": 143,
+          "printed_page": 133,
+          "chapter": 5,
+          "sections": [
+            "5.5 Loop else",
+            "5.6 Chapter summary"
+          ],
+          "chars": 1718
+        },
+        {
+          "page": 144,
+          "printed_page": 134,
+          "chapter": 5,
+          "sections": [
+            "5.6 Chapter summary"
+          ],
+          "chars": 600
+        },
+        {
+          "page": 145,
+          "printed_page": 135,
+          "chapter": 5,
+          "sections": [
+            "5.6 Chapter summary"
+          ],
+          "chars": 810
+        },
+        {
+          "page": 221,
+          "printed_page": null,
+          "chapter": 9,
+          "sections": [
+            "9.1 Modifying and iterating lists"
+          ],
+          "chars": 1061
+        },
+        {
+          "page": 222,
+          "printed_page": 212,
+          "chapter": 9,
+          "sections": [
+            "9.1 Modifying and iterating lists"
+          ],
+          "chars": 1371
+        },
+        {
+          "page": 223,
+          "printed_page": 213,
+          "chapter": 9,
+          "sections": [
+            "9.1 Modifying and iterating lists"
+          ],
+          "chars": 982
+        },
+        {
+          "page": 224,
+          "printed_page": 214,
+          "chapter": 9,
+          "sections": [
+            "9.1 Modifying and iterating lists",
+            "9.2 Sorting and reversing lists"
+          ],
+          "chars": 1218
+        },
+        {
+          "page": 225,
+          "printed_page": 215,
+          "chapter": 9,
+          "sections": [
+            "9.2 Sorting and reversing lists"
+          ],
+          "chars": 1230
+        },
+        {
+          "page": 226,
+          "printed_page": 216,
+          "chapter": 9,
+          "sections": [
+            "9.2 Sorting and reversing lists",
+            "9.3 Common list operations"
+          ],
+          "chars": 1148
+        },
+        {
+          "page": 227,
+          "printed_page": 217,
+          "chapter": 9,
+          "sections": [
+            "9.3 Common list operations"
+          ],
+          "chars": 1042
+        },
+        {
+          "page": 228,
+          "printed_page": 218,
+          "chapter": 9,
+          "sections": [
+            "9.3 Common list operations"
+          ],
+          "chars": 909
+        },
+        {
+          "page": 229,
+          "printed_page": 219,
+          "chapter": 9,
+          "sections": [
+            "9.3 Common list operations",
+            "9.4 Nested lists"
+          ],
+          "chars": 1374
+        },
+        {
+          "page": 230,
+          "printed_page": 220,
+          "chapter": 9,
+          "sections": [
+            "9.4 Nested lists"
+          ],
+          "chars": 1101
+        },
+        {
+          "page": 231,
+          "printed_page": 221,
+          "chapter": 9,
+          "sections": [
+            "9.4 Nested lists"
+          ],
+          "chars": 1233
+        },
+        {
+          "page": 232,
+          "printed_page": 222,
+          "chapter": 9,
+          "sections": [
+            "9.4 Nested lists",
+            "9.5 List comprehensions"
+          ],
+          "chars": 1274
+        },
+        {
+          "page": 233,
+          "printed_page": 223,
+          "chapter": 9,
+          "sections": [
+            "9.5 List comprehensions"
+          ],
+          "chars": 1152
+        },
+        {
+          "page": 234,
+          "printed_page": 224,
+          "chapter": 9,
+          "sections": [
+            "9.5 List comprehensions"
+          ],
+          "chars": 1255
+        },
+        {
+          "page": 235,
+          "printed_page": 225,
+          "chapter": 9,
+          "sections": [
+            "9.5 List comprehensions",
+            "9.6 Chapter summary"
+          ],
+          "chars": 1300
+        },
+        {
+          "page": 236,
+          "printed_page": 226,
+          "chapter": 9,
+          "sections": [
+            "9.6 Chapter summary"
+          ],
+          "chars": 1057
+        },
+        {
+          "page": 237,
+          "printed_page": null,
+          "chapter": 10,
+          "sections": [
+            "10.1 Dictionary basics"
+          ],
+          "chars": 1076
+        },
+        {
+          "page": 238,
+          "printed_page": 228,
+          "chapter": 10,
+          "sections": [
+            "10.1 Dictionary basics"
+          ],
+          "chars": 1074
+        },
+        {
+          "page": 239,
+          "printed_page": 229,
+          "chapter": 10,
+          "sections": [
+            "10.1 Dictionary basics",
+            "10.2 Dictionary creation"
+          ],
+          "chars": 1286
+        },
+        {
+          "page": 240,
+          "printed_page": 230,
+          "chapter": 10,
+          "sections": [
+            "10.2 Dictionary creation"
+          ],
+          "chars": 1262
+        },
+        {
+          "page": 241,
+          "printed_page": 231,
+          "chapter": 10,
+          "sections": [
+            "10.2 Dictionary creation",
+            "10.3 Dictionary operations"
+          ],
+          "chars": 1978
+        },
+        {
+          "page": 242,
+          "printed_page": 232,
+          "chapter": 10,
+          "sections": [
+            "10.3 Dictionary operations"
+          ],
+          "chars": 1391
+        },
+        {
+          "page": 243,
+          "printed_page": 233,
+          "chapter": 10,
+          "sections": [
+            "10.3 Dictionary operations"
+          ],
+          "chars": 1570
+        },
+        {
+          "page": 244,
+          "printed_page": 234,
+          "chapter": 10,
+          "sections": [
+            "10.3 Dictionary operations"
+          ],
+          "chars": 1592
+        },
+        {
+          "page": 245,
+          "printed_page": 235,
+          "chapter": 10,
+          "sections": [
+            "10.3 Dictionary operations"
+          ],
+          "chars": 1323
+        },
+        {
+          "page": 246,
+          "printed_page": 236,
+          "chapter": 10,
+          "sections": [
+            "10.3 Dictionary operations",
+            "10.4 Conditionals and looping in dictionaries"
+          ],
+          "chars": 865
+        },
+        {
+          "page": 247,
+          "printed_page": 237,
+          "chapter": 10,
+          "sections": [
+            "10.4 Conditionals and looping in dictionaries"
+          ],
+          "chars": 728
+        },
+        {
+          "page": 248,
+          "printed_page": 238,
+          "chapter": 10,
+          "sections": [
+            "10.4 Conditionals and looping in dictionaries"
+          ],
+          "chars": 979
+        },
+        {
+          "page": 249,
+          "printed_page": 239,
+          "chapter": 10,
+          "sections": [
+            "10.4 Conditionals and looping in dictionaries"
+          ],
+          "chars": 538
+        },
+        {
+          "page": 250,
+          "printed_page": 240,
+          "chapter": 10,
+          "sections": [
+            "10.4 Conditionals and looping in dictionaries"
+          ],
+          "chars": 1072
+        },
+        {
+          "page": 251,
+          "printed_page": 241,
+          "chapter": 10,
+          "sections": [
+            "10.4 Conditionals and looping in dictionaries",
+            "10.5 Nested dictionaries and dictionary comprehension"
+          ],
+          "chars": 975
+        },
+        {
+          "page": 252,
+          "printed_page": 242,
+          "chapter": 10,
+          "sections": [
+            "10.5 Nested dictionaries and dictionary comprehension"
+          ],
+          "chars": 836
+        },
+        {
+          "page": 253,
+          "printed_page": 243,
+          "chapter": 10,
+          "sections": [
+            "10.5 Nested dictionaries and dictionary comprehension"
+          ],
+          "chars": 1346
+        },
+        {
+          "page": 254,
+          "printed_page": 244,
+          "chapter": 10,
+          "sections": [
+            "10.5 Nested dictionaries and dictionary comprehension"
+          ],
+          "chars": 1833
+        },
+        {
+          "page": 255,
+          "printed_page": 245,
+          "chapter": 10,
+          "sections": [
+            "10.5 Nested dictionaries and dictionary comprehension",
+            "10.6 Chapter summary"
+          ],
+          "chars": 1793
+        },
+        {
+          "page": 256,
+          "printed_page": 246,
+          "chapter": 10,
+          "sections": [
+            "10.6 Chapter summary"
+          ],
+          "chars": 738
+        },
+        {
+          "page": 257,
+          "printed_page": 247,
+          "chapter": 10,
+          "sections": [
+            "10.6 Chapter summary"
+          ],
+          "chars": 796
+        },
+        {
+          "page": 258,
+          "printed_page": 248,
+          "chapter": 10,
+          "sections": [
+            "10.6 Chapter summary"
+          ],
+          "chars": 624
+        }
+      ],
+      "counted_page_total": 59,
+      "excluded_pages": [
+        {
+          "page": 146,
+          "chars": 112,
+          "reason": "no useful content (multimedia link only)"
+        }
+      ],
+      "total_chars": 67266
+    }
+  ],
+  "metadata_fields": {
+    "document_id": "str, fixed source id",
+    "source": "str, local PDF path",
+    "page": "int, PDF physical page (1-based)",
+    "printed_page": "int, page number printed in the book footer",
+    "chapter": "int, from PDF outline level 0; filter field",
+    "chapter_title": "str, from PDF outline",
+    "sections": "list[str], outline sections overlapping the page"
+  },
+  "known_issues": [
+    "pypdf maps bullet glyphs to U+FFFD; normalized to '•'.",
+    "Code indentation from PDF extraction may be approximate.",
+    "Figures/videos are not extracted (text only); no OCR needed."
+  ]
+}

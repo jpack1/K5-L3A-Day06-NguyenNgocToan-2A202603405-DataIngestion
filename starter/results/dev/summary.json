@@ -1,0 +1,105 @@
+{
+  "run_at": "2026-11-13T10:38:24+00:00",
+  "split": "dev",
+  "embedding": {
+    "provider": "OpenAI",
+    "model": "text-embedding-3-small",
+    "dimensions": 1536,
+    "query_document_handling": "same model, no prefix, raw chunk text"
+  },
+  "vector_store": "PostgreSQL 16 + pgvector 0.8.7, table chunks, exact cosine (<=>), no ANN index",
+  "configs": {
+    "A": {
+      "chunking": "fixed_size",
+      "chunk_size": 500,
+      "overlap": 50,
+      "filter": "none"
+    },
+    "B": {
+      "chunking": "by_paragraph (heading-aware, packed)",
+      "chunk_size": 500,
+      "overlap": 0,
+      "filter": "none"
+    },
+    "C": {
+      "chunking": "same as B",
+      "chunk_size": 500,
+      "overlap": 0,
+      "filter": "chapter = question.filter.chapter when given, else none"
+    }
+  },
+  "ingest": {
+    "A": {
+      "chunks": 171,
+      "stored_rows": 171,
+      "embedded_now": 0,
+      "reused_unchanged": 171,
+      "deleted_obsolete": 0,
+      "chars_total": 72866,
+      "len_min": 61,
+      "len_median": 500,
+      "len_mean": 426.1,
+      "len_max": 500,
+      "len_p10_p90": [
+        174.0,
+        500.0
+      ],
+      "embedding_tokens_now": 0,
+      "cost_usd_now": 0.0,
+      "ingest_seconds": 0.06
+    },
+    "B": {
+      "chunks": 203,
+      "stored_rows": 203,
+      "embedded_now": 0,
+      "reused_unchanged": 203,
+      "deleted_obsolete": 0,
+      "chars_total": 67126,
+      "len_min": 6,
+      "len_median": 386,
+      "len_mean": 330.7,
+      "len_max": 500,
+      "len_p10_p90": [
+        67.0,
+        493.0
+      ],
+      "embedding_tokens_now": 0,
+      "cost_usd_now": 0.0,
+      "ingest_seconds": 0.06
+    }
+  },
+  "query_tokens": 259,
+  "total_cost_usd_this_run": 5e-06,
+  "metrics": {
+    "A/dev": {
+      "n": 18,
+      "hit_at_1": 5,
+      "hit_at_3": 11,
+      "page_hit_at_3": 14,
+      "split_evidence": 3,
+      "filter_questions": 5,
+      "filter_hit_at_3": 2,
+      "filter_compliant": 1
+    },
+    "B/dev": {
+      "n": 18,
+      "hit_at_1": 6,
+      "hit_at_3": 10,
+      "page_hit_at_3": 11,
+      "split_evidence": 1,
+      "filter_questions": 5,
+      "filter_hit_at_3": 3,
+      "filter_compliant": 1
+    },
+    "C/dev": {
+      "n": 18,
+      "hit_at_1": 6,
+      "hit_at_3": 12,
+      "page_hit_at_3": 13,
+      "split_evidence": 1,
+      "filter_questions": 5,
+      "filter_hit_at_3": 5,
+      "filter_compliant": 5
+    }
+  }
+}

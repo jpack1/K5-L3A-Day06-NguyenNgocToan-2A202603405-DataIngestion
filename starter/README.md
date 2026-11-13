@@ -63,3 +63,22 @@ docker compose -p day6_student_starter stop
 5. Sau khi hoàn thiện, chạy `python -m src.run` từ thư mục `starter/`. Trước khi làm TODO, lệnh này **chủ động báo `NotImplementedError`**.
 
 Lưu code, cấu hình, kết quả và lệnh chạy để người chấm tái lập; không commit key, dữ liệu mật hoặc dữ liệu không có quyền chia sẻ.
+
+## Cách chạy bài làm (Day 06)
+
+Từ thư mục `starter/`, sau khi đã kích hoạt `.venv` và Docker đang chạy:
+
+```bash
+python -m pip install -r requirements.txt
+python scripts/check_setup.py          # kiểm tra PostgreSQL + pgvector
+python scripts/prepare_data.py         # tải PDF, chọn trang, ghi data/manifest.json + data/pages.jsonl
+python scripts/validate_benchmark.py   # kiểm chứng evidence của benchmark/questions.jsonl
+python -m tests.test_pipeline          # self-check offline cho chunking/evaluation
+python -m src.run --split dev          # ingest A/B + retrieval A/B/C trên dev -> results/dev/
+python -m src.run --split test         # chỉ chạy sau khi đã chốt cấu hình trên dev -> results/test/
+python scripts/make_audit_sheets.py    # tạo file nhãn thủ công results/manual/*.csv (không ghi đè nếu đã có)
+```
+
+Phân tích 5 khía cạnh: [results/EVALUATION.md](results/EVALUATION.md).
+
+`.env` cần `OPENAI_API_KEY` và `EMBEDDING_MODEL=text-embedding-3-small`. Nạp lại cùng dữ liệu sẽ không nhân đôi: chunk có cùng `chunk_id` và hash text được giữ lại mà không embed lại, chunk cũ của tài liệu đã thay đổi bị xóa.
